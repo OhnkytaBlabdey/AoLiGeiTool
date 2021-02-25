@@ -1,37 +1,37 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "aoligeitool",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "AoLiGei Tool",
+  "description": "奥利给管理工具",
   "authors": [
-    "Me!"
+    "OhnkytaBlabdey"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/OhnkytaBlabdey",
+    "sources": "https://github.com/OhnkytaBlabdey/AoLiGeiTool"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/aoligei/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "org.ohnkyta.AoLiGeiTool.AoLiGeiTool"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "AoLiGeitool.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.7.4",
+    "fabricloader": ">=0.11.0",
     "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "1.16.*"
   },
   "suggests": {
-    "another-mod": "*"
+    "flamingo": "*"
   }
 }

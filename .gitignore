@@ -1,5 +1,8 @@
-# gradle
 
+*.zip
+
+
+# gradle
 .gradle/
 build/
 out/
