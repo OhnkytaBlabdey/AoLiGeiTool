@@ -19,6 +19,7 @@ public class Rollback {
 		CommandRegistrationCallback.EVENT.register(
 				(commandDispatcher, b) -> commandDispatcher.register(
 						CommandManager.literal("rollback")
+								.requires((player)-> player.hasPermissionLevel(4))
 								.then(argument("seq", integer(0, 3))
 										.executes((ctx) -> {
 													String name = ctx.getSource().getPlayer().getName().getString();

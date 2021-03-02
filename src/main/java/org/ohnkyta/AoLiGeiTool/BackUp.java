@@ -24,6 +24,7 @@ public class BackUp {
 		CommandRegistrationCallback.EVENT.register(
 				(commandDispatcher, b) -> commandDispatcher.register(
 						CommandManager.literal("backup")
+								.requires((player)-> player.hasPermissionLevel(4))
 								.then(argument("tips", StringArgumentType.greedyString())
 										.executes(ctx -> {
 													String name = ctx.getSource().getPlayer().getName().getString();
